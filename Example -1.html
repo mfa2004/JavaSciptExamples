@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Topla()
+        {
+            var sayi1= Number(document.getElementById("sayi1").value);
+            var sayi2= Number(document.getElementById("sayi2").value);
+
+            document.getElementById("Sonuç").innerHTML="Sonuç: " + (sayi1+sayi2)
+
+        }
+        function Çıkar()
+        {
+            var sayi1=Number(document.getElementById("sayi1").value);
+            var sayi2=Number(document.getElementById("sayi2").value);
+
+            document.getElementById("Sonuç").innerHTML="Sonuç " + (sayi1-sayi2)
+        }
+        function Çarp()
+        {
+            var sayi1=Number(document.getElementById("sayi1").value);
+            var sayi2=Number(document.getElementById("sayi2").value);
+
+            document.getElementById("Sonuç").innerHTML="Sonuç " + (sayi1*sayi2)
+        }
+        function Böl()
+        {
+            var sayi1=Number(document.getElementById("sayi1").value);
+            var sayi2=Number(document.getElementById("sayi2").value);
+
+            document.getElementById("Sonuç").innerHTML="Sonuç " + (sayi1/sayi2)
+        }
+    </script>
+</head>
+<body>
+    <H1>Hesap Makinesi</H1>
+
+    <label for=></label>1.Sayı:</label>
+    <input type="text"id="sayi1">
+    <br>
+    <br>
+    <label for="">2.Sayi:</label>
+    <input type="text" id="sayi2">
+    <br><br>
+    <input type="button"onclick="Topla()" value="Topla" id="btnTopla">
+    <input type="button"onclick="Çıkar()" value="Çıkar" id="btnÇıkar">
+    <input type="button"onclick="Çarp()" value="Çarp" id="btnTopla">
+    <input type="button"onclick="Böl()" value="Böl" id="btnTopla">
+
+    <br><br>
+
+    <div id="Sonuç"></div>
+</body>
+</html>
